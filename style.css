@@ -1,0 +1,52 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+html{
+  font-family: roboto;
+}
+@font-face {font-family: roboto; src: url('Roboto-Thin.ttf');}
+.backgrounddiv{
+  font-family: roboto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menubar{
+  height: 100px;
+  //width:100%;
+  position: absolute;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.buttonbar{
+  
+}
+.rectanglebuttonwithshadow{
+  text-decoration: none;
+  font-family: roboto;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 16px;
+  border: none;
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.rectanglebuttonwithshadow:hover{
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: none;
+}
+.rectanglebuttonwithshadow:active{
+  color: white;
+  background-color: #404040;
+}
+
+#titlediv{
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
