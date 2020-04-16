@@ -13,14 +13,29 @@ html{
   font-family: roboto;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 150px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.large{
+  display: run-in;
+}
+.small{
+  display: none;
+}
+
 .menubar{
   font-size: 25px;
   position:relative;
 }
 
 .menutitle{
-  position:absolute; left: 50px; top: 50px
+  position:absolute;
+  left: 50px;
+  top: 50px
 }
 
 .menutitle a{
@@ -175,35 +190,59 @@ li{
 
 }
 
+@media (max-width: 799px) {
+  .large{
+    display: none;
+  }
+  .small{
+    display: flex;
+  }
+
+  .backgrounddiv{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+  }
+
+  .menutitle{
+    position:absolute;
+    left: 25px;
+    top: 25px;
+  }
+  .menutitle a{
+      font-size: 20px;
+  }
+
+  .buttonbar{
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      transition: 0.4s;
+  }
+  .buttonbar .large{
+    transition: 0.4s;
+    display: none;
+  }
+  .dropdown:hover .small{
+    transition: 0.4s;
+    padding-right: 100px;
+  }
+  .dropdown:hover .large{
+    transition: 0.4s;
+    display: block;
+  }
+
+}
+
+
 
 
 /* ****************** HOMEPAGE **************** */
 
-#titlediv{
-  height: 900px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 150px;
-}
 
 /* ****************** FRENCH TOAST **************** */
 
-#frenchtoasttitlediv {
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 150px;
-}
 
 /* ****************** MOMOS **************** */
-
-
-#momotitlediv {
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 150px;
-}
