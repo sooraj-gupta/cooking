@@ -13,37 +13,154 @@ html{
   background-size: cover;
 }
 .menubar{
-  height: 100px;
-  //width:100%;
-  position: absolute;
-  padding: 30px;
   font-size: 25px;
+  position:relative;
+}
+
+.menutitle{
+  position:absolute; left: 50px; top: 50px
+}
+
+.menutitle a{
+  font-size: 30px;
 }
 
 .buttonbar{
-  
+  position: absolute;
+  right:50px;
+  top: 50px;
+}
+.box{
+  padding: 25px;
+  margin: 10px;
+  box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.whitesquare{
+  position: relative;
+  background-color: white;
+  font-size: 25px;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items:baseline;
+  justify-content: center;
+  padding: 25px;
+
+}
+
+.whitesquare div{
+  position: absolute;
+  color: white;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom:0px;
+  width: 300px;
+  text-align: center;
+}
+
+.box:hover{
+  cursor: pointer;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+}
+
+.whitesquare:active{
+  box-shadow: none;
+}
+
+.whitesquare p{
+  font-size: 20px;
+  padding: 5px;
+  margin: 0px 10px;
+  color: black;
+}
+.whitesquare p span{
+  background-color: white;
+  box-shadow: 0 9px 16px 0 rgba(0,0,0, 0.2);
+  font-size: 20px;
+  padding: 5px;
+  color: black;
 }
 .rectanglebuttonwithshadow{
+  text-align: center;
   text-decoration: none;
   font-family: roboto;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   font-size: 20px;
   padding: 16px;
+  margin: 10px;
   border: none;
-  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.7);
+}
+.rectanglebuttonwithshadow span{
+  position: relative;
+  transition: 0.25s;
+  color:white;
 }
 .rectanglebuttonwithshadow:hover{
   cursor: pointer;
   transition: 0.25s;
-  box-shadow: none;
 }
+
+.rectanglebuttonwithshadow:hover span{
+  padding-right: 15px;
+}
+
+.rectanglebuttonwithshadow span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  color:white;
+  transition: 0.25s;
+}
+
+.rectanglebuttonwithshadow:hover span:after{
+  right:0;
+  opacity: 1;
+  transition: 0.25s;
+}
+
 .rectanglebuttonwithshadow:active{
   color: white;
   background-color: #404040;
 }
 
+.optionsdiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* ****************** HOMEPAGE **************** */
+
 #titlediv{
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
+
+/* ****************** FRENCH TOAST **************** */
+
+#frenchtoasttitlediv {
   height: 1000px;
   display: flex;
   justify-content: center;
