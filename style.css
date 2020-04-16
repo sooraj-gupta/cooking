@@ -38,7 +38,7 @@ html{
   top: 50px
 }
 
-.menutitle a{
+.menutitle > a{
   font-size: 30px;
 }
 
@@ -96,7 +96,7 @@ html{
   margin: 0px 10px;
   color: black;
 }
-.whitesquare p span{
+.whitesquare p .arrow{
   background-color: white;
   box-shadow: 0 9px 16px 0 rgba(0,0,0, 0.2);
   font-size: 20px;
@@ -115,7 +115,7 @@ html{
   border: none;
   box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.7);
 }
-.rectanglebuttonwithshadow span{
+.rectanglebuttonwithshadow .arrow{
   position: relative;
   transition: 0.25s;
   color:white;
@@ -125,11 +125,11 @@ html{
   transition: 0.25s;
 }
 
-.rectanglebuttonwithshadow:hover span{
+.rectanglebuttonwithshadow:hover .arrow{
   padding-right: 15px;
 }
 
-.rectanglebuttonwithshadow span:after{
+.rectanglebuttonwithshadow .arrow:after{
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -208,31 +208,34 @@ li{
 
   .menutitle{
     position:absolute;
-    left: 25px;
-    top: 25px;
+    left: 30px;
+    top: 35px;
   }
-  .menutitle a{
-      font-size: 20px;
+  .menutitle > a {
+      font-size: 30px;
   }
 
   .buttonbar{
       position: absolute;
-      right: 25px;
-      top: 25px;
+      right: 15px;
+      top: 15px;
       transition: 0.4s;
+      height: 80px;
+      overflow: hidden;
   }
   .buttonbar .large{
     transition: 0.4s;
-    display: none;
+    display: block;
   }
   .dropdown:hover .small{
     transition: 0.4s;
     padding-right: 100px;
   }
-  .dropdown:hover .large{
-    transition: 0.4s;
-    display: block;
+  .dropdown:hover {
+    height: 360px;
+    overflow: hidden;
   }
+
 
 }
 
