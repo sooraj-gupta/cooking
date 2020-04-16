@@ -7,6 +7,8 @@ html{
   font-family: roboto;
 }
 @font-face {font-family: roboto; src: url('Roboto-Thin.ttf');}
+@font-face {font-family: robotosemibold; src: url('Roboto-Regular.ttf');}
+
 .backgrounddiv{
   font-family: roboto;
   background-repeat: no-repeat;
@@ -49,7 +51,8 @@ html{
   align-items:baseline;
   justify-content: center;
   padding: 25px;
-
+  background-size: cover;
+  background-position: center;
 }
 
 .whitesquare div{
@@ -89,7 +92,7 @@ html{
   text-align: center;
   text-decoration: none;
   font-family: roboto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-size: 20px;
   padding: 16px;
@@ -139,6 +142,30 @@ html{
   align-items: center;
 
 }
+h1{
+  font-size: 50px;
+  padding-left:  20px;
+}
+
+.descriptiondiv{
+  color:black;
+  padding: 50px;
+
+}
+
+.descriptiondiv ul {
+  font-size: 20px;
+}
+
+li{
+  margin: 20px 0;
+}
+
+.ingredientsdiv{
+  color:white;
+  padding: 50px;
+
+}
 
 .footer{
   display: flex;
@@ -148,10 +175,12 @@ html{
 
 }
 
+
+
 /* ****************** HOMEPAGE **************** */
 
 #titlediv{
-  height: 1000px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,6 +190,17 @@ html{
 /* ****************** FRENCH TOAST **************** */
 
 #frenchtoasttitlediv {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
+
+/* ****************** MOMOS **************** */
+
+
+#momotitlediv {
   height: 1000px;
   display: flex;
   justify-content: center;
