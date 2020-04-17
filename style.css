@@ -227,14 +227,13 @@ li{
     transition: 0.4s;
     display: block;
   }
-  .dropdown:hover .small{
+  /*.dropdown:hover .small{
     transition: 0.4s;
     padding-right: 100px;
   }
   .dropdown:hover {
     height: 360px;
-    overflow: hidden;
-  }
+  }*/
 
 
 }
