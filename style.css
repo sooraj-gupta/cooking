@@ -172,6 +172,21 @@ h1{
   font-size: 20px;
 }
 
+.descriptiondiv > span{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.descriptiondiv > span > span {
+  font-size: 40px;
+}
+.descriptiondiv > span + span{
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
 li{
   margin: 20px 0;
 }
