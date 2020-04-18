@@ -172,19 +172,24 @@ h1{
   font-size: 20px;
 }
 
-.descriptiondiv > span{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+.descriptiondiv table{
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 20px;
 }
-.descriptiondiv > span > span {
-  font-size: 40px;
+
+.toprow td{
+  font-size: 30px;
 }
-.descriptiondiv > span + span{
-  font-size: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+.bottomrow td{
+  font-size: 15px;
+}
+
+.descriptiondiv table td{
+  padding: 0 10px;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+
 }
 
 li{
