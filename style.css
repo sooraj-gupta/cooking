@@ -158,14 +158,24 @@ html{
 
 }
 h1{
-  font-size: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 60px;
   padding-left:  20px;
+}
+h1 span{
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .descriptiondiv{
   color:black;
   padding: 50px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .descriptiondiv ul {
@@ -201,6 +211,28 @@ li{
   color:white;
   padding: 50px;
 
+}
+.ingredientsdiv ul{
+  font-size: 20px;
+}
+
+
+.instructionsbgdiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.instructionsdiv{
+  padding: 50px;
+  color:black;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  
 }
 
 .footer{
