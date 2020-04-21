@@ -8,9 +8,9 @@ html{
 }
 @font-face {font-family: roboto; src: url('Roboto-Thin.ttf');}
 @font-face {font-family: robotosemibold; src: url('Roboto-Regular.ttf');}
+@font-face {font-family: robotoregular; src: url('Roboto-Light.ttf');}
 
 .backgrounddiv{
-  font-family: roboto;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 150px;
@@ -106,7 +106,6 @@ html{
 .rectanglebuttonwithshadow{
   text-align: center;
   text-decoration: none;
-  font-family: roboto;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-size: 20px;
@@ -212,6 +211,11 @@ li{
   padding: 50px;
 
 }
+.ingredientsdiv p{
+  font-family: robotoregular;
+  font-size: 20px;
+  padding: 0 20px;
+}
 .ingredientsdiv ul{
   font-size: 20px;
 }
@@ -232,8 +236,34 @@ li{
   color:black;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
-  
 }
+
+.instructions{
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: center;
+}
+.instruction{
+  //text-align:center;
+}
+.instructionnum{
+  //border-right: 1px solid black;
+  font-size: 80px;
+  padding: 50px 100px;
+  padding-left: 20px;
+}
+.instructioninfo{
+  //border: 1px solid black;
+  font-size: 25px;
+  font-weight: ;
+  padding: 50px 100px;
+}
+
+.instructions p{
+  font-size: 25px;
+  padding: 0 20px;
+}
+
 
 .footer{
   display: flex;
@@ -244,11 +274,15 @@ li{
 }
 
 @media (max-width: 799px) {
+  html{
+    font-family: robotoregular;
+  }
   .large{
     display: none;
   }
   .small{
     display: flex;
+    justify-content: flex-end;
   }
 
   .backgrounddiv{
@@ -256,7 +290,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 50px;
   }
 
   .menutitle{
@@ -273,13 +307,42 @@ li{
       right: 15px;
       top: 15px;
       transition: 0.4s;
-      height: 80px;
+      height: 70px;
       overflow: hidden;
   }
   .buttonbar .large{
     transition: 0.4s;
     display: block;
   }
+
+  h1{
+    font-size: 40px;
+  }
+  .toprow td{
+    font-size: 30px;
+  }
+  .bottomrow td{
+    font-size: 10px;
+  }
+  .ingredientsdiv ul{
+    font-size: 15px;
+  }
+  .descriptiondiv ul {
+    font-size: 15px;
+  }
+
+  .whitesquare{
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  .whitesquare div{
+    width: 150px;
+  }
+  .bottomrow td{
+    font-size: 15px;
+  }
+
   /*.dropdown:hover .small{
     transition: 0.4s;
     padding-right: 100px;
