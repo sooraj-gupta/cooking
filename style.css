@@ -239,9 +239,6 @@ li{
 }
 
 .instructions{
-  display: flex;
-  flex-wrap: wrap;
-  //justify-content: center;
 }
 .instruction{
   //text-align:center;
