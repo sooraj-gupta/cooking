@@ -4,12 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css">
     <title>French Toast</title>
+    <script>
+    var buttonclicked = false;
+    function clickedmenu(){
+      buttonclicked = !buttonclicked;
+      console.log("c");
+
+      if(buttonclicked){
+        document.getElementById("menudiv").style.height = "360px";
+      }
+      else{
+        document.getElementById("menudiv").style.height = "70px";
+      }
+    }
+    </script>
   </head>
   <body>
     <div class="menubar">
-      <div class="menutitle"><a href="index.html" style="text-decoration:none; color: black; ">cooking.</a></div>
-      <div class="buttonbar dropdown " >
-        <a class="small rectanglebuttonwithshadow" style = "font-size: 40px; padding: 5px 15px 7px 15px; box-shadow: none;" >&equiv; <span style="font-size: 20px; padding: 14px;">menu</span></a>
+      <div class="menutitle"><a href="#titlediv" style="text-decoration:none; color: black; ">cooking.</a></div>
+      <div id = "menudiv" class="buttonbar dropdown " >
+        <button  onclick = "clickedmenu()" id = "menubutton" class="small rectanglebuttonwithshadow" style = " box-shadow: none;" >menu</button>
         <a href="index.html" class="large rectanglebuttonwithshadow"><span class = "arrow">homepage</span></a>
         <a href="frenchtoast.html"  class="large rectanglebuttonwithshadow "><span class = "arrow">french toast</span></a>
         <a href="momo.html" class="large rectanglebuttonwithshadow"><span class = "arrow">momos</span></a>
