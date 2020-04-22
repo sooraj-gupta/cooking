@@ -170,7 +170,7 @@ h1 span{
 
 .descriptiondiv{
   color:black;
-  padding: 50px;
+  padding: 50px calc(4vw);
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -208,7 +208,7 @@ li{
 
 .ingredientsdiv{
   color:white;
-  padding: 50px;
+  padding: 50px calc(4vw);;
 
 }
 .ingredientsdiv p{
@@ -232,7 +232,7 @@ li{
 }
 
 .instructionsdiv{
-  padding: 50px;
+  padding: 50px calc(4vw);;
   color:black;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
@@ -264,12 +264,16 @@ li{
 
 .footer{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-color: gray;
+  height: 500px;
 }
 
+.footer div{
+  margin: 50px;
+}
 @media (max-width: 799px) {
   html{
     font-family: robotoregular;
@@ -327,6 +331,9 @@ li{
   .descriptiondiv ul {
     font-size: 15px;
   }
+  .rectanglebuttonwithshadow .arrow{
+    font-family: robotoregular;
+  }
 
   .whitesquare{
     font-size: 20px;
@@ -347,6 +354,18 @@ li{
   .dropdown:hover {
     height: 360px;
   }*/
+
+  .instructionnum{
+    font-size: 70px;
+    padding: 30px 50px;
+    padding-left: 20px;
+  }
+  .instructioninfo{
+    //border: 1px solid black;
+    font-size: 20px;
+    font-weight: ;
+    padding: 40px 0;
+  }
 
 
 }
