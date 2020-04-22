@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Momos</title>
+    <script>
+    var buttonclicked = false;
+    function clickedmenu(){
+      buttonclicked = !buttonclicked;
+      console.log("c");
+
+      if(buttonclicked){
+        document.getElementById("menudiv").style.height = "360px";
+      }
+      else{
+        document.getElementById("menudiv").style.height = "70px";
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="menubar">
+      <div class="menutitle"><a href="index.html" style="text-decoration:none; color: black; ">cooking.</a></div>
+      <div id = "menudiv" class="buttonbar dropdown " >
+        <button  onclick = "clickedmenu()" id = "menubutton" class="small rectanglebuttonwithshadow" style = " box-shadow: none;" >recipe menu</button>
+        <a href="index.html" class="large rectanglebuttonwithshadow"><span class = "arrow">homepage</span></a>
+        <a href="frenchtoast.html"  class="large rectanglebuttonwithshadow "><span class = "arrow">french toast</span></a>
+        <a href="momo.html" class="large rectanglebuttonwithshadow"><span class = "arrow">momos</span></a>
+        <a href="steak.html" class="large rectanglebuttonwithshadow"><span class = "arrow">steak</span></a>
+      </div>
+      <div style="background-image: url('momo.jpg'); background-position:center; background-size: cover" class="backgrounddiv" id="titlediv">momos.</div>
+    </div>
+
+    <div class = "descriptiondiv" style="background-color:white">
+      <div>
+        <h1>description</h1>
+        <table>
+          <tr class="toprow">
+            <td>35m</td>
+            <td>60m</td>
+            <td>35</td>
+          </tr>
+          <tr class="bottomrow">
+            <td>preptime</td>
+            <td>cook time</td>
+            <td>calories</td>
+          </tr>
+        </table>
+
+        <ul>
+          <li>filling</li>
+          <li>steamed</li>
+          <li>medium difficulty</li>
+          <li>mouth-watering</li>
+
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="ingredientsdiv" style="background-color:black">
+      <h1>ingredients <span>12 servings</span></h1>
+      <p>dough:</p>
+      <ul>
+        <li>120 grams refined flour</li>
+        <li>1/4 teaspoon baking powder</li>
+        <li>1/2 teaspoon salt water (for kneading)</li> 
+      </ul>
+      <p>filling:</p>
+      <ul>
+        <li>1 cup chicken (minced)</li>
+        <li>1/2 cup onions, finely chopped</li>
+        <li>1/4 tsp black pepper powder</li>
+        <li>1 tbsp oil</li>
+        <li>1/2 tsp garlic paste</li>
+        <li>1/2 tsp soy sauce</li>
+        <li>1/4 tsp vinegar</li>
+        <li>salt to taste</li>
+      </ul>
+      <p>chilli sauce:</p>
+      <ul>
+        <li>25 gram garlic, peeled</li>
+        <li>6 gms whole red chillies</li>
+        <li>3 tbsp vinegar</li>
+        <li>1 tbsp oil</li>
+      </ul>
+    </div>
+
+    <div style="background-image: url('https://truffle-assets.imgix.net/b2ea17cb-506_vegetablemomos_dishland2.jpg');" class="instructionsbgdiv">
+      <div class="instructionsdiv" style="">
+          <h1>instructions</h1>
+          <div class="instructions">
+            <p>prepare chilli sauce:</p>
+            <table>
+              <tr class="instruction">
+                <td class="instructionnum">1</td>
+                <td class="instructioninfo">Cut the red chillies and soak them in water for about two hours. Cut up into small pieces and soak in the vinegar for one to two hours. Put all the ingredients in a mixie and grind to a smooth paste.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="instructions">
+            <p>prepare momos:</p>
+            <table>
+              <tr class="instruction">
+                <td class="instructionnum">1</td>
+                <td class="instructioninfo">In a bowl mix all the ingredients of the chicken or vegetable filling, according to your choice. Keep aside.</td>
+              </tr>
+              <tr class="instruction">
+                <td class="instructionnum">2</td>
+                <td class="instructioninfo">Knead the refined flour, baking powder and salt together into firm dough. Cover and keep aside for 30 minutes.</td>
+              </tr>
+              <tr class="instruction">
+                <td class="instructionnum">3</td>
+                <td class="instructioninfo">Roll the dough into very thin 4-5 inch rounds.</td>
+              </tr>
+              <tr class="instruction">
+                <td class="instructionnum">4</td>
+                <td class="instructioninfo">Bring the edges together and twist to seal it.</td>
+              </tr>
+              <tr class="instruction">
+                <td class="instructionnum">5</td>
+                <td class="instructioninfo">Steam in a steamer for about 10 minutes and serve hot with chilly sauce.</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div onclick = "window.location.href = '#titlediv'" class="rectanglebuttonwithshadow">top</div>
+      <div>&copy; sooraj gupta</div>
+    </div>
+  </body>
+</html>
