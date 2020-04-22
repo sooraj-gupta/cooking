@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    var buttonclicked = false;
+    function clickedmenu(){
+      buttonclicked = !buttonclicked;
+      console.log("c");
+
+      if(buttonclicked){
+        document.getElementById("menudiv").style.height = "360px";
+      }
+      else{
+        document.getElementById("menudiv").style.height = "70px";
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!--<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@alyson_jane?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Alyson McPhee"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Alyson McPhee</span></a>-->
+
+    <div class="menubar">
+      <div class="menutitle"><a href="index.html" style="text-decoration:none; color: black; ">cooking.</a></div>
+      <div id = "menudiv" class="buttonbar dropdown " >
+        <button  onclick = "clickedmenu()" id = "menubutton" class="small rectanglebuttonwithshadow" style = " box-shadow: none;" >recipe menu</button>
+        <a href="index.html" class="large rectanglebuttonwithshadow"><span class = "arrow">homepage</span></a>
+        <a href="frenchtoast.html"  class="large rectanglebuttonwithshadow "><span class = "arrow">french toast</span></a>
+        <a href="momo.html" class="large rectanglebuttonwithshadow"><span class = "arrow">momos</span></a>
+        <a href="steak.html" class="large rectanglebuttonwithshadow"><span class = "arrow">steak</span></a>
+      </div>
+      <div style="background-image: url('choppingcoriander.jpg');" class="backgrounddiv" id="titlediv">cooking.</div>
+    </div>
+
+    <div class = "optionsdiv"style="background-color: white; color: black ; font-size: 80px; padding: 50px;">
+      <div onclick="window.location.href = 'frenchtoast.html'"style="background-image: url('french-toast.jpg');" class="box whitesquare" style = "">
+        <div>french toast</div>
+      </div>
+      <div onclick="window.location.href = 'momo.html'" style="background-image: url('momo.jpg');" class="box whitesquare" style = "">
+        <div>momos</div>
+      </div>
+      <div onclick="window.location.href = 'steak.html'" style="background-image: url('https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');" class="box whitesquare" style = "">
+        <div>steak</div>
+      </div>
+
+      <!--<div class="box whitesquare" style = "">
+        <img src="french-toast.jpg" alt="" height = "180px" width="180px">
+        <p>french toast</p>
+        <a href="#" class = "rectanglebuttonwithshadow" style="margin: 0px 8px ;"><span>click for recipe</span></a>
+      </div>
+
+      <div style="background-image: url('french-toast.jpg');" class="box whitesquare" style="">
+        <p><span> french toast </span></p>
+        <a href="#" class="rectanglebuttonwithshadow"><span>click for recipe</span></a>
+      </div>-->
+    </div>
+
+    <div class="footer">
+      <div onclick = "window.location.href = '#titlediv'" class="rectanglebuttonwithshadow">top</div>
+      <div>&copy; sooraj gupta</div>
+    </div>
+
+  </body>
+</html>
