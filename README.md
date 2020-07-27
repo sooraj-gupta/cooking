@@ -1,6 +1,6 @@
 # Project 0
 
-Web Programming with Python and JavaScript
+Web Programming with HTML, CSS and JavaScript
 
 A cooking website with three recipes.
 It works with both desktop and mobile.
