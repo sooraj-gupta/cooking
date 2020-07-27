@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <title>My Webpage</title>
@@ -11,7 +11,7 @@
       console.log("c");
 
       if(buttonclicked){
-        document.getElementById("menudiv").style.height = "360px";
+        document.getElementById("menudiv").style.height = "410px";
       }
       else{
         document.getElementById("menudiv").style.height = "70px";
@@ -30,11 +30,12 @@
         <a href="frenchtoast.html"  class="large rectanglebuttonwithshadow "><span class = "arrow">french toast</span></a>
         <a href="momo.html" class="large rectanglebuttonwithshadow"><span class = "arrow">momos</span></a>
         <a href="steak.html" class="large rectanglebuttonwithshadow"><span class = "arrow">steak</span></a>
+        <a href= "#optionsdiv" class="large rectanglebuttonwithshadow"><span class = "arrow">more</span></a>
       </div>
       <div style="background-image: url('choppingcoriander.jpg');" class="backgrounddiv" id="titlediv">cooking.</div>
     </div>
 
-    <div class = "optionsdiv"style="background-color: white; color: black ; font-size: 80px; padding: 50px;">
+    <div class = "optionsdiv" id = "optionsdiv" style="background-color: white; color: black ; font-size: 80px; padding: 50px;">
       <div onclick="window.location.href = 'frenchtoast.html'"style="background-image: url('french-toast.jpg');" class="box whitesquare" style = "">
         <div>french toast</div>
       </div>
@@ -43,6 +44,9 @@
       </div>
       <div onclick="window.location.href = 'steak.html'" style="background-image: url('https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');" class="box whitesquare" style = "">
         <div>steak</div>
+      </div> 
+      <div onclick="window.location.href = 'pannacotta.html'" style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');" class="box whitesquare" style = "">
+        <div>panna cotta</div>
       </div>
 
       <!--<div class="box whitesquare" style = "">

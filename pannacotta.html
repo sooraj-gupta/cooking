@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Panna Cotta</title>
+    <script>
+    var buttonclicked = false;
+    function clickedmenu(){
+      buttonclicked = !buttonclicked;
+      console.log("c");
+
+      if(buttonclicked){
+        document.getElementById("menudiv").style.height = "360px";
+      }
+      else{
+        document.getElementById("menudiv").style.height = "70px";
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="menubar">
+      <div class="menutitle"><a href="index.html" style="text-decoration:none; color: black; ">cooking.</a></div>
+      <div id = "menudiv" class="buttonbar dropdown " >
+        <button  onclick = "clickedmenu()" id = "menubutton" class="small rectanglebuttonwithshadow" style = " box-shadow: none; background-color: rgba(0,0,0,0.6);" >recipe menu</button>
+        <a href="index.html" class="large rectanglebuttonwithshadow"><span class = "arrow">homepage</span></a>
+        <a href="frenchtoast.html"  class="large rectanglebuttonwithshadow "><span class = "arrow">french toast</span></a>
+        <a href="momo.html" class="large rectanglebuttonwithshadow"><span class = "arrow">momos</span></a>
+        <a href="steak.html" class="large rectanglebuttonwithshadow"><span class = "arrow">steak</span></a>
+      </div>
+      <div style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');" class="backgrounddiv" id="titlediv">panna cotta.</div>
+    </div>
+
+    <div class = "descriptiondiv" style="background-color:white">
+      <div>
+        <h1>description</h1>
+        <table>
+          <tr class="toprow">
+            <td>5m</td>
+            <td>5m</td>
+            <td>95</td>
+          </tr>
+          <tr class="bottomrow">
+            <td>preptime</td>
+            <td>cook time</td>
+            <td>calories</td>
+          </tr>
+        </table>
+
+        <ul>
+          <li>breakfast</li>
+          <li>low-calorie</li>
+          <li>easy to make</li>
+          <li>quick</li>
+
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="ingredientsdiv" style="background-color:black">
+      <h1>ingredients <span>4 servings</span></h1>
+      <ul>
+        <li>1 egg</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>1/2 teaspoon</li>
+        <li>1/4 cup milk</li>
+        <li>4 slices of bread</li>
+      </ul>
+    </div>
+
+    <div style="background-image: url('french-toast2.jpg');" class="instructionsbgdiv">
+      <div class="instructionsdiv" style="">
+          <h1>instructions</h1>
+          <div class="instructions">
+            <table>
+              <tr class="instruction">
+                <td class="instructionnum">1</td>
+                <td class="instructioninfo">Beat egg, vanilla and cinnamon in shallow dish. Stir in milk.</td>
+              </tr>
+              <tr class="instruction">
+                <td class="instructionnum">2</td>
+                <td class="instructioninfo">Dip bread in egg mixture, turning to coat both sides evenly.</td>
+              </tr>
+              <tr>
+                <tr class="instruction">
+                  <td class="instructionnum">3</td>
+                  <td class="instructioninfo">Cook bread slices on lightly greased nonstick griddle or skillet on medium heat until browned on both sides. Serve with Easy Spiced Syrup (recipe follows), if desired.</td>
+                </tr>
+              </tr>
+              <tr>
+                <tr class="instruction">
+                  <td class="instructionnum">4</td>
+                  <td class="instructioninfo">Easy Spiced Syrup: Add 1 teaspoon Pure Vanilla Extract and 1/4 teaspoon Ground Cinnamon to 1 cup pancake syrup; stir well to mix. Serve warm, if desired.</td>
+                </tr>
+              </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div onclick = "window.location.href = '#titlediv'" class="rectanglebuttonwithshadow">top</div>
+      <div>&copy; sooraj gupta</div>
+    </div>
+  </body>
+</html>
