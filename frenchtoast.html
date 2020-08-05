@@ -5,18 +5,18 @@
     <link rel="stylesheet" href="style.css">
     <title>French Toast</title>
     <script>
-    var buttonclicked = false;
-    function clickedmenu(){
-      buttonclicked = !buttonclicked;
-      console.log("c");
+      var buttonclicked = false;
+      function clickedmenu(){
+        buttonclicked = !buttonclicked;
+        console.log("c");
 
-      if(buttonclicked){
-        document.getElementById("menudiv").style.height = "360px";
+        if(buttonclicked){
+          document.getElementById("menudiv").style.height = "360px";
+        }
+        else{
+          document.getElementById("menudiv").style.height = "70px";
+        }
       }
-      else{
-        document.getElementById("menudiv").style.height = "70px";
-      }
-    }
     </script>
   </head>
   <body>
@@ -29,7 +29,7 @@
         <a href="momo.html" class="large rectanglebuttonwithshadow"><span class = "arrow">momos</span></a>
         <a href="steak.html" class="large rectanglebuttonwithshadow"><span class = "arrow">steak</span></a>
       </div>
-      <div style="background-image: url('french-toast.jpg'); color: white;" class="backgrounddiv" id="titlediv">french toast.</div>
+      <div style="background-image: url('https://github.com/sooraj-gupta/cooking/blob/master/french-toast.jpg?raw=true'); color: white;" class="backgrounddiv" id="titlediv">french toast.</div>
     </div>
 
     <div class = "descriptiondiv" style="background-color:white">
@@ -72,36 +72,36 @@
 
     <div style="background-image: url('french-toast2.jpg');" class="instructionsbgdiv">
       <div class="instructionsdiv" style="">
-          <h1>instructions</h1>
-          <div class="instructions">
-            <table>
-              <tr class="instruction">
-                <td class="instructionnum">1</td>
-                <td class="instructioninfo">Beat egg, vanilla and cinnamon in shallow dish. Stir in milk.</td>
-              </tr>
-              <tr class="instruction">
-                <td class="instructionnum">2</td>
-                <td class="instructioninfo">Dip bread in egg mixture, turning to coat both sides evenly.</td>
-              </tr>
-              <tr>
-                <tr class="instruction">
-                  <td class="instructionnum">3</td>
-                  <td class="instructioninfo">Cook bread slices on lightly greased nonstick griddle or skillet on medium heat until browned on both sides. Serve with Easy Spiced Syrup (recipe follows), if desired.</td>
-                </tr>
-              </tr>
-              <tr>
-                <tr class="instruction">
-                  <td class="instructionnum">4</td>
-                  <td class="instructioninfo">Easy Spiced Syrup: Add 1 teaspoon Pure Vanilla Extract and 1/4 teaspoon Ground Cinnamon to 1 cup pancake syrup; stir well to mix. Serve warm, if desired.</td>
-                </tr>
-              </tr>
-            </table>
-          </div>
-      </div>
+        <h1>instructions</h1>
+        <div class="instructions">
+          <table>
+            <tr class="instruction">
+              <td class="instructionnum">1</td>
+              <td class="instructioninfo">Beat egg, vanilla and cinnamon in shallow dish. Stir in milk.</td>
+            </tr>
+            <tr class="instruction">
+              <td class="instructionnum">2</td>
+              <td class="instructioninfo">Dip bread in egg mixture, turning to coat both sides evenly.</td>
+            </tr>
+            <tr>
+            <tr class="instruction">
+              <td class="instructionnum">3</td>
+              <td class="instructioninfo">Cook bread slices on lightly greased nonstick griddle or skillet on medium heat until browned on both sides. Serve with Easy Spiced Syrup (recipe follows), if desired.</td>
+            </tr>
+            </tr>
+          <tr>
+          <tr class="instruction">
+            <td class="instructionnum">4</td>
+            <td class="instructioninfo">Easy Spiced Syrup: Add 1 teaspoon Pure Vanilla Extract and 1/4 teaspoon Ground Cinnamon to 1 cup pancake syrup; stir well to mix. Serve warm, if desired.</td>
+          </tr>
+          </tr>
+        </table>
     </div>
-    <div class="footer">
-      <div onclick = "window.location.href = '#titlediv'" class="rectanglebuttonwithshadow">top</div>
-      <div>&copy; sooraj gupta</div>
     </div>
-  </body>
+  </div>
+<div class="footer">
+  <div onclick = "window.location.href = '#titlediv'" class="rectanglebuttonwithshadow">top</div>
+  <div>&copy; sooraj gupta</div>
+</div>
+</body>
 </html>
