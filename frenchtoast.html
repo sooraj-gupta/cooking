@@ -4,20 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css">
     <title>French Toast</title>
-    <script>
-      var buttonclicked = false;
-      function clickedmenu(){
-        buttonclicked = !buttonclicked;
-        console.log("c");
-
-        if(buttonclicked){
-          document.getElementById("menudiv").style.height = "360px";
-        }
-        else{
-          document.getElementById("menudiv").style.height = "70px";
-        }
-      }
-    </script>
+    <script src = "javascript.js"></script>
   </head>
   <body>
     <div class="menubar">
@@ -29,8 +16,8 @@
         <a href="momo.html" class="large rectanglebuttonwithshadow"><span class = "arrow">momos</span></a>
         <a href="steak.html" class="large rectanglebuttonwithshadow"><span class = "arrow">steak</span></a>
       </div>
+     </div>
       <div style="background-image: url('https://github.com/sooraj-gupta/cooking/blob/master/french-toast.jpg?raw=true'); color: white;" class="backgrounddiv" id="titlediv">french toast.</div>
-    </div>
 
     <div class = "descriptiondiv" style="background-color:white">
       <div>
@@ -103,5 +90,6 @@
   <div onclick = "window.location.href = '#titlediv'" class="rectanglebuttonwithshadow">top</div>
   <div>&copy; sooraj gupta</div>
 </div>
+<div id = "bounce"></div>
 </body>
 </html>

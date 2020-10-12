@@ -6,7 +6,47 @@ body{
 html{
   font-family: roboto;
   scroll-behavior: smooth;
+  background-color: lightgray;
+  z-index: 4;
+  overscroll-behavior: contain;
 }
+
+center{
+    position: absolute;
+    top: -20px;
+    right: 50vw;
+    z-index: 5;
+}
+
+@keyframes bounce {
+    0%   {left:162px; top:90px;}
+    2%  {width:112px; left:40px; top:90px;height: 3px;}
+    4%  {width:3px; left:40px; top:90px; height: 3px;}
+    6%  {width:3px; left:40px; top:45px; height: 45px;}
+    8%  {width:3px; left:40px; top:45px; height: 3px;}
+    10%  {width:112px; left:40px; top:45px; height: 3px;}
+    12%  {width:3px; left:162px; top:45px; height: 3px;}
+    14%  {width:3px; left:162px; top:45px; height: 45px;}
+    16%  {width:3px; left:162px; top:90px; height: 3px;}
+    18%  {width:0px; left:162px; top:90px; height: 0px;}
+    /*80% {width:112px; left:50px; top:90px;height 3px;}
+    100% {width: 0px; left:162px; top:90px;height 3px;}*/
+}
+
+#bounce{
+    position: fixed;
+    height: 3px;
+    width: 3px;
+    
+    background-color: white;
+    border-radius: 1px;
+    animation: bounce 5s infinite ;
+}
+#bounce:hover{
+
+    transition: 0.5s;
+}
+
 @font-face {font-family: roboto; src: url('Roboto-Thin.ttf');}
 @font-face {font-family: robotosemibold; src: url('Roboto-Regular.ttf');}
 @font-face {font-family: robotoregular; src: url('Roboto-Light.ttf');}
@@ -19,6 +59,7 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .large{
@@ -29,14 +70,27 @@ html{
 }
 
 .menubar{
-  font-size: 25px;
-  position:relative;
+  background-color: rgba(255,255,255,0);
+  height:125px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  transition: 0.3s;
+     
+}
+html:not([data-scroll='0']) .menubar {
+  background-color: rgba(255,255,255,0.5);
+  transition: 0.3s;
 }
 
 .menutitle{
   position:absolute;
   left: 50px;
-  top: 50px
+  top: 50px;
+  position: fixed;
+  z-index: 10000;
+  background-color: rgba(0,0,0,0);
+  transition: 0.2s;
 }
 
 .menutitle > a{
@@ -47,6 +101,8 @@ html{
   position: absolute;
   right:50px;
   top: 50px;
+  position: fixed;
+  z-index: 10000;
 }
 .box{
   padding: 25px;
@@ -296,12 +352,13 @@ li{
   }
 
   .menutitle{
-    position:absolute;
+    position:fixed;
     left: 30px;
     top: 35px;
   }
   .menutitle > a {
       font-size: 30px;
+      
   }
 
   .buttonbar{
@@ -381,3 +438,4 @@ li{
 
 
 /* ****************** MOMOS **************** */
+
